@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Your Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">ShopEase</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cart">Cart: <span id="cart-count">0</span></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Shop the Best Products Online</h1>
+        <p>Quality products delivered fast</p>
+        <button onclick="scrollToSection('products')">Shop Now</button>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Product 1">
+                <h3>Wireless Headphones</h3>
+                <p>$50</p>
+                <button onclick="addToCart()">Add to Cart</button>
+                <button onclick="buyNow('https://www.amazon.com/')">Buy Now</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Product 2">
+                <h3>Smart Watch</h3>
+                <p>$80</p>
+                <button onclick="addToCart()">Add to Cart</button>
+                <button onclick="buyNow('https://www.amazon.com/')">Buy Now</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="images/product3.jpg" alt="Product 3">
+                <h3>Backpack</h3>
+                <p>$40</p>
+                <button onclick="addToCart()">Add to Cart</button>
+                <button onclick="buyNow('https://www.amazon.com/')">Buy Now</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="images/product4.jpg" alt="Product 4">
+                <h3>Trendy Shirt Collection</h3>
+                <p>$25</p>
+                <button onclick="addToCart()">Add to Cart</button>
+                <button onclick="buyNow('https://www.amazon.com/')">Buy Now</button>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="images/product5.jpg" alt="Product 5">
+                <h3>Wireless Mouse</h3>
+                <p>$25</p>
+                <button onclick="addToCart()">Add to Cart</button>
+                <button onclick="buyNow('https://www.amazon.com/')">Buy Now</button>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="images/product6.jpg" alt="Product 6">
+                <h3>Sneakers</h3>
+                <p>$20</p>
+                <button onclick="addToCart()">Add to Cart</button>
+                <button onclick="buyNow('https://www.amazon.com/')">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>SHOP EASE </h2>
+        <p>
+        Your one-stop destination for the latest gadgets, trendy fashion, and must-have accessories. Enjoy fast delivery, quality products, 
+        and exceptional customer service, all under one roof.
+            <B>ShopEase - Where Convenience Meets Quality</B></p>
+        <img src="images/mainproduct.jpg" alt="About ShopEase">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder=" Lallu " required>
+            <input type="email" id="email" placeholder="lallu31@gmail.com" required>
+            <textarea id="message" placeholder="your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Follow us on:</p>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+        <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+        <p>&copy; 2025 ShopEase. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
